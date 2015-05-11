@@ -35,6 +35,7 @@
  progress may be any number (not necessarily confined to the range of 0.0 to 1.0).
  */
 typedef CGFloat (^INTUEasingFunction)(CGFloat);
+typedef CGFloat (^DZEasingFunction)(CGFloat);
 
 // Linear interpolation (no easing)
 extern INTUEasingFunction INTULinear;
@@ -88,5 +89,10 @@ extern INTUEasingFunction INTUEaseInOutElastic;
 extern INTUEasingFunction INTUEaseInBounce;
 extern INTUEasingFunction INTUEaseOutBounce;
 extern INTUEasingFunction INTUEaseInOutBounce;
+
+// Exponentially-decaying bounce easing
+extern DZEasingFunction DZBounceEaseIn;
+extern DZEasingFunction DZBounceEaseOut;
+extern DZEasingFunction DZBounceEaseInOut;
 
 #endif /* INTU_EASING_FUNCTIONS_H */
